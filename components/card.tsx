@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const Card = ({image}) => {
+const Card = ({image}:{image:any}) => {
   return (
     <>
     <div className='h-96 my-8'>
