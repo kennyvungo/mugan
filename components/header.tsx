@@ -13,7 +13,7 @@ export default function Header(){
           <Link href="/">HOME</Link>
         </div>
         <div>
-          <Link href="/works">WORK</Link>
+          <Link href="/works">PORTFOLIO</Link>
         </div>
       </div>
       <div className='w-3/5 flex flex-row justify-center '>
