@@ -9,7 +9,7 @@ import panel5 from '../public/panel5.png'
 export default function Home() {
   return (
     <main className="text-black overflow-y-auto h-screen w-screen flex flex-col items-center pb-28">
-      <div className= "w-2/4">
+      <div className= "w-2/4 h-1/5 container-md">
       <Card image={panel1}/>
       <Card image={panel2}/>
       <Card image={panel3}/>

@@ -10,9 +10,9 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const pathname = usePathname();
   return (
-    <div className="flex flex-row items-center bg-white h-24 text-black font-sans w-screen bg-opacity-75">
-      <div className="flex flex-row  w-1/5 justify-around">
-        <div className={pathname == "/" ? "underline" : ""}>
+    <div className="flex flex-row items-center bg-white h-1/6 text-black font-sans w-screen bg-opacity-75">
+      <div className="flex flex-row  w-1/5 justify-center">
+        <div className={pathname == "/" ? "underline mr-10" : ""}>
           <Link href="/">HOME</Link>
         </div>
         <div className={pathname == "/portfolio" ? "underline" : ""}>
