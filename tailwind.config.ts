@@ -10,6 +10,9 @@ const config: Config = {
     fontFamily: {
       sans: ["amiko", "ui-sans-serif", "system-ui"],
     },
+    height: {
+      custom: "calc(100vh / 10)", // Set the custom height to 1/7 of the viewport height
+    },
   },
   plugins: [],
 };
