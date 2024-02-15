@@ -1,10 +1,14 @@
 import React from 'react'
-
-const Card = () => {
+import Image from 'next/image'
+const Card = ({image}) => {
   return (
-    <div className='h-96 bg-orange-500 my-5'>
-        Card
+    <>
+    <div className='h-96 my-8'>
+        <Image src={image} alt="panel"></Image>
     </div>
+    <div className='h-12'>
+    </div>
+    </>
   )
 }
 
