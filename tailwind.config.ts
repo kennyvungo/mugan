@@ -13,6 +13,9 @@ const config: Config = {
     height: {
       custom: "calc(100vh / 10)", // Set the custom height to 1/7 of the viewport height
     },
+    margin: {
+      "vh-bottom": "5vh", // Adjust the value as needed
+    },
   },
   plugins: [],
 };

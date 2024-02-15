@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Card = ({image}:{image:any}) => {
   return (
     <>
-    <div className='mb-8'>
+    <div className='mb-vh-bottom'>
         <Image src={image} alt="panel"></Image>
     </div>
     </>
