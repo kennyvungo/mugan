@@ -7,7 +7,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    
+    fontFamily: {
+      sans: ["amiko", "ui-sans-serif", "system-ui"],
+    },
   },
   plugins: [],
 };
