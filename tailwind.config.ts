@@ -7,8 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens:{
-      'sm':{'max': '639px'}
+    screens: {
+      sm: { max: "960px" },
+      md: "960px",
+      lg: "1440px",
     },
     fontFamily: {
       sans: ["amiko", "ui-sans-serif", "system-ui"],
@@ -17,14 +19,14 @@ const config: Config = {
       custom: "calc(100vh / 10)", // Set the custom height to 1/7 of the viewport height
     },
     margin: {
-      'vh-bottom': '5vh',
-      'mobile': '3vh', 
+      "vh-bottom": "5vh",
+      mobile: "3vh",
     },
-      inset: {
-        '1/4-top': '25%',
-        '3/8-top': '37.5%',
-        '5/8-top': '62.5%',
-      },
+    inset: {
+      "1/4-top": "25%",
+      "3/8-top": "37.5%",
+      "5/8-top": "62.5%",
+    },
   },
   plugins: [],
 };

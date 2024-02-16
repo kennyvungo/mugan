@@ -22,7 +22,7 @@ export default function Header() {
       </div>
       <div className="md:hidden w-1/5 flex flex-row justify-center items-center font-extrabold">
         <Link href="?modal=true">
-          <VscKebabVertical style={{ fill: "black" }} />
+          <VscKebabVertical style={{ fill: "black" }} className="md:hidden" />
         </Link>
       </div>
       <div className="w-3/5 flex flex-row justify-center ">
