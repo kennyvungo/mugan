@@ -13,7 +13,7 @@ export default function Home() {
     <span className="h-custom"></span>
     <main className="text-black overflow-y-auto h-screen w-screen flex flex-col items-center pb-28">
       <div className= "w-3/5 h-1/5 container-md">
-        {panels.map((num)=> <Card imageNum={num} /> )}
+        {panels.map((num)=> <Card key={num} imageNum={num} /> )}
       </div>
     </main>
     </>

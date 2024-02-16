@@ -7,7 +7,7 @@ const Product = ({prodNum}:{prodNum:any}) => {
   return (
     <figure className='my-auto'>
         <span className="relative block transition duration-500 ease-in-out transform rounded">
-            <Image width={300} height={300} className="relative block object-contain object-center w-full h-full" loading="lazy" alt="logo" src={`/${prodNum}.jpg`}></Image>
+            <Image width={300} height={300} className="relative block object-contain object-center w-full h-full" loading="lazy" alt="logo" src={`/gallery/${prodNum}.jpg`}></Image>
         </span>
     </figure>
   )
