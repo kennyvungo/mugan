@@ -5,7 +5,7 @@ const Card = ({imageNum}:{imageNum:any}) => {
     <>
     <div className='mb-vh-bottom '>
         <Image 
-          src={`/panels/${imageNum}.png`} 
+          src={`/panels/panel${imageNum}.png`} 
           alt="panel"
           width={1000}
           height={1000}
