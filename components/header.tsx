@@ -16,7 +16,7 @@ export default function Header() {
         <div
           className={
             pathname == "/"
-              ? "underline px-2 hover:text-gray-500"
+              ? "underline px-2"
               : "px-2 hover:text-gray-500"
           }
         >
@@ -25,7 +25,7 @@ export default function Header() {
         <div
           className={
             pathname == "/gallery"
-              ? "underline hover:text-gray-500"
+              ? "underline"
               : "hover:text-gray-500"
           }
         >
