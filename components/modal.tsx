@@ -3,7 +3,6 @@ import { useSearchParams, usePathname } from "next/navigation";
 import Link from "next/link";
 import { useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import { Suspense } from "react";
 
 function Modal() {
   const searchParams = useSearchParams();
@@ -22,7 +21,6 @@ function Modal() {
 
   return (
     <>
-    <Suspense>
       {modal && (
           <div className="fixed top-0 w-full min-h-full bg-black bg-opacity-50 z-50 backdrop-blur flex justify-center items-center overscroll-hidden font-sans text-2xl">
           <div className="flex flex-col items-center justify-around min-h-96">
@@ -42,7 +40,6 @@ function Modal() {
           </div>
         </div>
       )}
-      </Suspense>
     </>
   );
 }
