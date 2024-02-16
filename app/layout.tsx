@@ -22,13 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Suspense>
         <div className="flex flex-col h-screen items-center">
+        <Suspense>
           <Modal/>
+        </Suspense>
           <Header/>
           {children}
         </div>
-        </Suspense>
       </body>
     </html>
   );
