@@ -6,9 +6,10 @@ import Link from "next/link";
 import { FaInstagram } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { VscKebabVertical } from "react-icons/vsc";
-
+import { useState } from "react";
 export default function Header() {
   const pathname = usePathname();
+
   return (
     <div className="flex flex-row fixed items-center bg-white h-custom text-black font-sans w-screen z-10 min-h-24 sm:min-h-10">
       <div className="flex flex-row  w-1/5 min-w-min justify-around sm:hidden">
@@ -20,7 +21,9 @@ export default function Header() {
         </div>
       </div>
       <div className="md:hidden w-1/5 flex flex-row justify-center items-center font-extrabold">
-        <VscKebabVertical style={{ fill: "black" }} />
+        <Link href="?modal=true">
+          <VscKebabVertical style={{ fill: "black" }} />
+        </Link>
       </div>
       <div className="w-3/5 flex flex-row justify-center ">
         <Link href="/">

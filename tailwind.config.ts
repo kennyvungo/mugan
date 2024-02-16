@@ -20,6 +20,11 @@ const config: Config = {
       'vh-bottom': '5vh',
       'mobile': '3vh', 
     },
+      inset: {
+        '1/4-top': '25%',
+        '3/8-top': '37.5%',
+        '5/8-top': '62.5%',
+      },
   },
   plugins: [],
 };

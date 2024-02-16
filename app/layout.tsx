@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header";
 import Home from "./page";
+import Modal from "@/components/modal";
 import '@fontsource/amiko'
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,8 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex flex-col h-screen items-center">
-        <Header/>
-        {children}
+          <Modal/>
+          <Header/>
+          {children}
         </div>
       </body>
     </html>
