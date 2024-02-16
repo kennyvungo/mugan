@@ -15,18 +15,21 @@ export default function Header() {
       <div className="flex flex-row  w-1/5 min-w-min justify-around sm:hidden">
         <div
           className={
-            pathname == "/"
-              ? "underline px-2"
-              : "px-2 hover:text-gray-500"
+            pathname == "/" ? "underline px-2" : "px-2 hover:text-gray-500"
           }
         >
           <Link href="/">HOME</Link>
         </div>
         <div
           className={
-            pathname == "/gallery"
-              ? "underline"
-              : "hover:text-gray-500"
+            pathname == "/about" ? "underline px-2" : "px-2 hover:text-gray-500"
+          }
+        >
+          <Link href="/about">ABOUT</Link>
+        </div>
+        <div
+          className={
+            pathname == "/gallery" ? "underline" : "hover:text-gray-500"
           }
         >
           <Link href="/gallery">GALLERY</Link>
