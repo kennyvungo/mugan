@@ -23,7 +23,7 @@ function Modal() {
     <>
       {modal && (
           <div className="fixed top-0 w-full min-h-full bg-black bg-opacity-50 z-50 backdrop-blur flex justify-center items-center overscroll-hidden font-sans text-2xl">
-          <div className="flex flex-col items-center justify-around min-h-96">
+          <div className="flex flex-col items-center justify-around min-h-96 text-white">
             <Link href={"/"} className="">
               HOME
             </Link>
