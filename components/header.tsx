@@ -13,10 +13,22 @@ export default function Header() {
   return (
     <div className="flex flex-row fixed items-center bg-white h-custom text-[#3B3B3B] font-sans w-screen z-10 min-h-24 sm:min-h-10">
       <div className="flex flex-row  w-1/5 min-w-min justify-around sm:hidden">
-        <div className={pathname == "/" ? "underline px-2" : "px-2"}>
+        <div
+          className={
+            pathname == "/"
+              ? "underline px-2 hover:text-gray-500"
+              : "px-2 hover:text-gray-500"
+          }
+        >
           <Link href="/">HOME</Link>
         </div>
-        <div className={pathname == "/gallery" ? "underline" : ""}>
+        <div
+          className={
+            pathname == "/gallery"
+              ? "underline hover:text-gray-500"
+              : "hover:text-gray-500"
+          }
+        >
           <Link href="/gallery">GALLERY</Link>
         </div>
       </div>
@@ -34,7 +46,7 @@ export default function Header() {
         <span className="w-2/4 sm:w-1/6"> </span>
         <Link
           href="https://www.instagram.com/by_unumcornu/"
-          className="flex flex-row justify-center text-2xl w-2/4 sm:text-lg"
+          className="flex flex-row justify-center text-2xl w-2/4 sm:text-lg hover:text-gray-500"
         >
           <FaInstagram />
         </Link>
