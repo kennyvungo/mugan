@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col h-screen items-center">
-        <Suspense>
-          <Modal/>
-        </Suspense>
-          <Header/>
+        <div className="flex flex-col h-screen items-center text-[#3B3B3B]">
+          <Suspense>
+            <Modal />
+          </Suspense>
+          <Header />
           {children}
         </div>
       </body>

@@ -11,7 +11,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-row fixed items-center bg-white h-custom text-black font-sans w-screen z-10 min-h-24 sm:min-h-10">
+    <div className="flex flex-row fixed items-center bg-white h-custom text-[#3B3B3B] font-sans w-screen z-10 min-h-24 sm:min-h-10">
       <div className="flex flex-row  w-1/5 min-w-min justify-around sm:hidden">
         <div className={pathname == "/" ? "underline px-2" : "px-2"}>
           <Link href="/">HOME</Link>
