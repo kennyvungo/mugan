@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/header";
 import Home from "./page";
 import Modal from "@/components/modal";
+import Footer from "@/components/footer";
 import '@fontsource/amiko'
 import {Suspense} from 'react';
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           </Suspense>
           <Header />
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

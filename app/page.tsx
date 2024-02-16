@@ -1,7 +1,7 @@
 
 import Card from "@/components/card";
 export default function Home() {
-  let panels = [1,2,3,4,5]
+  let panels = [1,2,3,4,5,6]
   
   return (
     <>
