@@ -15,8 +15,8 @@ export default function Header() {
         <div className={pathname == "/" ? "underline px-2" : "px-2"}>
           <Link href="/">HOME</Link>
         </div>
-        <div className={pathname == "/portfolio" ? "underline" : ""}>
-          <Link href="/portfolio">PORTFOLIO</Link>
+        <div className={pathname == "/gallery" ? "underline" : ""}>
+          <Link href="/gallery">GALLERY</Link>
         </div>
       </div>
       <div className="w-3/5 flex flex-row justify-center ">

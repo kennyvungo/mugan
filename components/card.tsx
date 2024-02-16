@@ -1,10 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-const Card = ({image}:{image:any}) => {
+const Card = ({imageNum}:{imageNum:any}) => {
   return (
     <>
-    <div className='mb-vh-bottom'>
-        <Image src={image} alt="panel"></Image>
+    <div className='mb-vh-bottom '>
+        <Image 
+          src={`/panel${imageNum}.png`} 
+          alt="panel"
+          width={1000}
+          height={1000}
+        />
     </div>
     </>
   )
