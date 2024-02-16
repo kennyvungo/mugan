@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Home from "./page";
 import Modal from "@/components/modal";
 import '@fontsource/amiko'
+import {Suspense} from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Suspense>
         <div className="flex flex-col h-screen items-center">
           <Modal/>
           <Header/>
           {children}
         </div>
+        </Suspense>
       </body>
     </html>
   );
