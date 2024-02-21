@@ -22,6 +22,7 @@ const config: Config = {
     margin: {
       "vh-bottom": "5vh",
       mobile: "3vh",
+      custom: "calc(100vh / 7)",
     },
     inset: {
       "1/4-top": "25%",

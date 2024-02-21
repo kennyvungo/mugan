@@ -1,12 +1,11 @@
 import React from 'react'
-import Link from 'next/link'
-import logo from '../public/logo.png'
 import Image from 'next/image'
-import cup from '../public/1.jpg';
+import Link from 'next/link';
 const Product = ({prodNum}:{prodNum:any}) => {
   return (
     <figure className="my-auto overflow-hidden">
       <span className="relative block transition duration-300 transform origin-center hover:scale-105">
+        <Link href={`/gallery/${prodNum}`}>
         <Image
           width={300}
           height={300}
@@ -14,7 +13,8 @@ const Product = ({prodNum}:{prodNum:any}) => {
           loading="lazy"
           alt="logo"
           src={`/gallery/${prodNum}.jpg`}
-        ></Image>
+          ></Image>
+          </Link>
       </span>
     </figure>
   );
