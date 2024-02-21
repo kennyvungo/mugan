@@ -3,16 +3,16 @@ import Image from 'next/image'
 const Card = ({imageNum}:{imageNum:any}) => {
   return (
     <>
-    <div className='mb-vh-bottom '>
-        <Image 
-          src={`/panels/panel${imageNum}.png`} 
+      <div className="sm:mb-mobile md:mb-vh-bottom pointer-events-none">
+        <Image
+          src={`/panels/panel${imageNum}.png`}
           alt="panel"
           width={1000}
           height={1000}
         />
-    </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default Card

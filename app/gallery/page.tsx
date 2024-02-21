@@ -8,11 +8,11 @@ const Works = () => {
   }
   return (
     <>
-      <span className="h-custom"></span>
+      <span className="h-custom2"></span>
       <div className="h-screen w-screen items-center justify-center flex flex-col">
-        <div className="grid w-3/5 flex-wrap items-start grid-cols-1 lg:grid-cols-3 md:grid-cols-2 portfolio gap-4 pb-28 overflow-auto">
+        <div className="grid w-3/5 flex-wrap items-start grid-cols-1 lg:grid-cols-3 md:grid-cols-2 portfolio gap-4 pb-28 overflow-auto pointer-events-none">
           {prods.map((prod) => (
-            <Product key={prod} prodNum={prod} />
+            <Product key={prod} prodNum={prod}/>
           ))}
         </div>
       </div>
