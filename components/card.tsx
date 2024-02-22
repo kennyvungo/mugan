@@ -7,8 +7,8 @@ const Card = ({imageNum}:{imageNum:any}) => {
         <Image
           src={`/panels/panel${imageNum}.png`}
           alt="panel"
-          width={1000}
-          height={1000}
+          width={3000}
+          height={3000}
         />
       </div>
     </>
