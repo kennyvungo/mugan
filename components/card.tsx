@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const Card = ({imageNum}:{imageNum:any}) => {
+const Card = ({imageNum}:{imageNum:Number}) => {
   return (
     <>
       <div className="sm:mb-mobile md:mb-vh-bottom pointer-events-none">
