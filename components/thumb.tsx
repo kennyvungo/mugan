@@ -14,7 +14,7 @@ const useStore = create<imageState>()((set) => ({
 const Thumb = ({itemid}:{itemid:String}) => {
   return (
     <div className="text-green-500 text-6xl mt-custom min-h-96 w-2/5 bg-slate-500">
-      how many images GALLERY ITEM
+      {/* how many images GALLERY ITEM */}
       {itemid}
       <Image
         src={`/gallery/${itemid}.jpg`}
