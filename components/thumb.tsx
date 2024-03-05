@@ -1,10 +1,8 @@
 'use client'
 import React from 'react'
-import { create } from 'zustand'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import item from '@/app/gallery/item/item'
 interface ThumbProps{
   itemid: string;
   numThumbs: number;
@@ -22,26 +20,38 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
   };
 
   return (
-    <div className="text-green-500 text-6xl mt-custom min-h-60 w-4/5 bg-slate-500 flex flex-col">
+    <div className="text-6xl mt-custom min-h-96 h-full w-3/5 bg-slate-500 flex flex-col">
       <div className="flex flex-row">
-        <div className="flex flex-col justify-center">
-          {numThumbs > 1 ? (
-
-            <Image
-            className={`${
-              focused == 0 ? "filter grayscale brightness-50" : ""
-            }`}
-            src={`/gallery/${itemid}.jpg`}
-            width={150}
-            height={150}
-            alt={"primary image"}
-            onClick={() => handleChangeImage(itemid, 0)}
-            ></Image>
-            ): null}
+        <div className="flex flex-col justify-around h-96">
           {numThumbs > 1 ? (
             <Image
               className={`${
-                focused == 1 ? "filter grayscale brightness-50" : ""
+                focused == 0
+                  ? "filter grayscale brightness-50"
+                  : ""
+              }`}
+              src={`/gallery/${itemid}.jpg`}
+              width={150}
+              height={150}
+              alt={"primary image"}
+              onClick={() => handleChangeImage(itemid, 0)}
+            ></Image>
+          ) : (
+            <Image
+              className="invisible mb-5 mr-5"
+              src={`/gallery/${itemid}.jpg`}
+              width={150}
+              height={150}
+              alt={"primary image"}
+              onClick={() => handleChangeImage(itemid, 0)}
+            ></Image>
+          )}
+          {numThumbs > 1 ? (
+            <Image
+              className={`${
+                focused == 1
+                  ? "filter grayscale brightness-50 mb-5 mr-5"
+                  : "mb-5 mr-5"
               }`}
               src={`/gallery/${thumb1}.jpg`}
               width={150}
@@ -53,7 +63,9 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
           {numThumbs > 2 ? (
             <Image
               className={`${
-                focused == 2 ? "filter grayscale brightness-50" : ""
+                focused == 2
+                  ? "filter grayscale brightness-50 mb-5 mr-5"
+                  : "mb-5 mr-5"
               }`}
               src={`/gallery/${thumb2}.jpg`}
               width={150}
@@ -65,7 +77,9 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
           {numThumbs > 3 ? (
             <Image
               className={`${
-                focused == 3 ? "filter grayscale brightness-50" : ""
+                focused == 3
+                  ? "filter grayscale brightness-50 mb-5 mr-5"
+                  : "mb-5 mr-5"
               }`}
               src={`/gallery/${thumb3}.jpg`}
               width={150}
