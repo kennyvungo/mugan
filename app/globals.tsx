@@ -1,20 +1,166 @@
 interface Item{
+    id: Number,
     numThumbs: Number,
     material: String,
-    glaze: String
-}
-
-interface allItems{
-    itemid: <Item>
+    glaze: String,
+    descrip: String,
 }
 
 
-export const allItems = {
-    1:{
-        
-    }
 
-
-
-
-}
+export const allItems: Item[] = [
+  {
+    id: 1,
+    numThumbs: 2,
+    material: "clay",
+    glaze: "white",
+    descrip: "small cup",
+  },
+  {
+    id: 2,
+    numThumbs: 2,
+    material: "porcelain",
+    glaze: "blue",
+    descrip: "hand-crafted ",
+  },
+  {
+    id: 3,
+    numThumbs: 2,
+    material: "clay",
+    glaze: "black",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 4,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 5,
+    numThumbs: 2,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 6,
+    numThumbs: 2,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 7,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 8,
+    numThumbs: 3,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 9,
+    numThumbs: 4,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 10,
+    numThumbs: 2,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 11,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 12,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 13,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 14,
+    numThumbs: 3,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 15,
+    numThumbs: 2,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 16,
+    numThumbs: 2,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 17,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 17,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 17,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 17,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 17,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+  {
+    id: 17,
+    numThumbs: 1,
+    material: "3clay",
+    glaze: "white",
+    descrip: "adfadfadf",
+  },
+];
