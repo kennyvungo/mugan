@@ -1,5 +1,4 @@
 'use client';
-
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/app/globals';
