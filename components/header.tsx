@@ -31,6 +31,15 @@ export default function Header() {
         >
           <Link href="/gallery">GALLERY</Link>
         </div>
+        <div
+          className={
+            pathname == "/contact"
+              ? "underline pointer-events-none"
+              : "hover:text-gray-500"
+          }
+        >
+          <Link href="/contact">CONTACT</Link>
+        </div>
       </div>
       <div className="md:hidden w-1/5 flex flex-row justify-center items-center font-extrabold">
         <Link href="?modal=true">
