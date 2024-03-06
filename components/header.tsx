@@ -30,7 +30,7 @@ export default function Header() {
           }
         >
           <Link href="/gallery">GALLERY</Link>
-        </div>
+      </div>
         <div
           className={
             pathname == "/contact"

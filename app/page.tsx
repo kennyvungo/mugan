@@ -11,7 +11,7 @@ export default function Home() {
         {panels.map((num)=> <Card key={num} imageNum={num} /> )}
       </div>
       <Footer/>
-    </main>
+    </main> 
 
     </>
   );
