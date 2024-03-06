@@ -33,7 +33,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                     ? "filter grayscale brightness-75 mb-5"
                     : "mb-5 hover:brightness-75 cursor-pointer"
                 }`}
-                src={`/gallery/${itemid}.jpg`}
+                src={`https://dnm89pmv3oqa8.cloudfront.net/${itemid}.jpg`}
                 width={150}
                 height={150}
                 alt={"primary image"}
@@ -42,7 +42,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
             ) : (
               <Image
                 className="invisible mb-5"
-                src={`/gallery/${itemid}.jpg`}
+                src={`https://dnm89pmv3oqa8.cloudfront.net/${itemid}.jpg`}
                 width={150}
                 height={150}
                 alt={"primary image"}
@@ -56,7 +56,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                     ? "filter grayscale brightness-75 mb-5"
                     : "mb-5 hover:brightness-75 cursor-pointer"
                 }`}
-                src={`/gallery/${thumb1}.jpg`}
+                src={`https://dnm89pmv3oqa8.cloudfront.net/${thumb1}.jpg`}
                 width={150}
                 height={150}
                 alt={""}
@@ -70,7 +70,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                     ? "filter grayscale brightness-75 mb-5"
                     : "mb-5 hover:brightness-75 cursor-pointer"
                 }`}
-                src={`/gallery/${thumb2}.jpg`}
+                src={`https://dnm89pmv3oqa8.cloudfront.net/${thumb2}.jpg`}
                 width={150}
                 height={150}
                 alt={""}
@@ -84,7 +84,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                     ? "filter grayscale brightness-75 mb-5"
                     : "mb-5 hover:brightness-75 cursor-pointer"
                 }`}
-                src={`/gallery/${thumb3}.jpg`}
+                src={`https://dnm89pmv3oqa8.cloudfront.net/${thumb3}.jpg`}
                 width={150}
                 height={150}
                 alt={""}
@@ -94,7 +94,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
           </div>
           <div className="w-3/5 mr-5 sm:w-4/5">
             <Image
-              src={`/gallery/${featured}.jpg`}
+              src={`https://dnm89pmv3oqa8.cloudfront.net/${featured}.jpg`}
               width={900}
               height={900}
               alt={"primary image"}
@@ -129,7 +129,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
       {/* mobile layout */}
       <div className="md:hidden w-4/5 mt-custom">
         <Image
-          src={`/gallery/${featured}.jpg`}
+          src={`https://dnm89pmv3oqa8.cloudfront.net/${featured}.jpg`}
           width={400}
           height={400}
           alt={"primary image"}
@@ -142,7 +142,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                   ? "filter grayscale brightness-75 mb-5 mr-3"
                   : "mb-5 mr-3 hover:brightness-75 cursor-pointer"
               }`}
-              src={`/gallery/${itemid}.jpg`}
+              src={`https://dnm89pmv3oqa8.cloudfront.net/${itemid}.jpg`}
               width={75}
               height={75}
               alt={"primary image"}
@@ -151,7 +151,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
           ) : (
             <Image
               className="invisible mb-5"
-              src={`/gallery/${itemid}.jpg`}
+              src={`https://dnm89pmv3oqa8.cloudfront.net/${itemid}.jpg`}
               width={75}
               height={75}
               alt={"primary image"}
@@ -165,7 +165,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                   ? "filter grayscale brightness-75 mb-5 mr-3"
                   : "mb-5 mr-3 hover:brightness-75 cursor-pointer"
               }`}
-              src={`/gallery/${thumb1}.jpg`}
+              src={`https://dnm89pmv3oqa8.cloudfront.net/${thumb1}.jpg`}
               width={75}
               height={75}
               alt={""}
@@ -179,7 +179,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                   ? "filter grayscale brightness-75"
                   : "hover:brightness-75 cursor-pointer"
               }`}
-              src={`/gallery/${thumb2}.jpg`}
+              src={`https://dnm89pmv3oqa8.cloudfront.net/${thumb2}.jpg`}
               width={75}
               height={75}
               alt={""}
@@ -193,7 +193,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
                   ? "filter grayscale brightness-75 mb-5"
                   : "mb-5 hover:brightness-75 cursor-pointer"
               }`}
-              src={`/gallery/${thumb3}.jpg`}
+              src={`https://dnm89pmv3oqa8.cloudfront.net/${thumb3}.jpg`}
               width={150}
               height={150}
               alt={""}
