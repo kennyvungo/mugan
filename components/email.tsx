@@ -20,7 +20,6 @@ const Email: FC = () => {
     <form className="w-1/2 sm:w-4/5" onSubmit={handleSubmit(onSubmit)}>
       <div className="mb-5">
         <label
-          htmlFor="name"
           className="mb-3 block text-base font-medium text-black"
         >
           NAME
@@ -34,7 +33,6 @@ const Email: FC = () => {
       </div>
       <div className="mb-5">
         <label
-          htmlFor="email"
           className="mb-3 block text-base font-medium text-black"
         >
           EMAIL ADDRESS
@@ -48,7 +46,6 @@ const Email: FC = () => {
       </div>
       <div className="mb-5">
         <label
-          htmlFor="message"
           className="mb-3 block text-base font-medium text-black"
         >
           MESSAGE
