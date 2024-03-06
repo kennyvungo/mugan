@@ -20,15 +20,15 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
   };
 
   return (
-    <div className="text-6xl mt-custom min-h-96 h-full w-3/5 bg-slate-500 flex flex-col">
+    <div className="mt-custom min-h-96 h-full w-4/5 flex flex-col mr-5">
       <div className="flex flex-row">
-        <div className="flex flex-col justify-around h-96">
+        <div className="flex flex-col h-96 mr-5">
           {numThumbs > 1 ? (
             <Image
               className={`${
                 focused == 0
-                  ? "filter grayscale brightness-50"
-                  : ""
+                  ? "filter grayscale brightness-50 mb-5"
+                  : "mb-5 hover:grayscale brightness-25 cursor-pointer"
               }`}
               src={`/gallery/${itemid}.jpg`}
               width={150}
@@ -51,7 +51,7 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
               className={`${
                 focused == 1
                   ? "filter grayscale brightness-50 mb-5 mr-5"
-                  : "mb-5 mr-5"
+                  : "mb-5 mr-5 hover:grayscale brightness-25 cursor-pointer"
               }`}
               src={`/gallery/${thumb1}.jpg`}
               width={150}
@@ -65,7 +65,7 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
               className={`${
                 focused == 2
                   ? "filter grayscale brightness-50 mb-5 mr-5"
-                  : "mb-5 mr-5"
+                  : "mb-5 mr-5 hover:grayscale brightness-25 cursor-pointer"
               }`}
               src={`/gallery/${thumb2}.jpg`}
               width={150}
@@ -79,7 +79,7 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
               className={`${
                 focused == 3
                   ? "filter grayscale brightness-50 mb-5 mr-5"
-                  : "mb-5 mr-5"
+                  : "mb-5 mr-5 hover:grayscale brightness-25 cursor-pointer"
               }`}
               src={`/gallery/${thumb3}.jpg`}
               width={150}
@@ -89,21 +89,33 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
             ></Image>
           ) : null}
         </div>
-        <Image
-          src={`/gallery/${featured}.jpg`}
-          width={600}
-          height={600}
-          alt={"primary image"}
-        ></Image>
+        <div>
+          <Image
+            src={`/gallery/${featured}.jpg`}
+            width={600}
+            height={600}
+            alt={"primary image"}
+          ></Image>
+          <div className="text-2l flex flex-row justify-between mt-10">
+            {itemid !== "1" ? (
+              <Link
+                href={`/gallery/${String(Number(itemid) - 1)}`}
+                className="hover:text-gray-400"
+              >
+                previous item
+              </Link>
+            ) : null}
+            {itemid !== "36" ? (
+              <Link
+                href={`/gallery/${String(Number(itemid) + 1)}`}
+                className="hover:text-gray-500"
+              >
+                next item
+              </Link>
+            ) : null}
+          </div>
+        </div>
       </div>
-      {itemid !== "1" ? (
-        <Link href={`/gallery/${String(Number(itemid) - 1)}`}>
-          Previous item
-        </Link>
-      ) : null}
-      {itemid !== "36" ? (
-        <Link href={`/gallery/${String(Number(itemid) + 1)}`}>Next item</Link>
-      ) : null}
     </div>
   );
 }

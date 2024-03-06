@@ -1,13 +1,15 @@
 import React from 'react'
-
-const Info = ({itemid}:{itemid:string}) => {
+import { Item } from '@/app/globals';
+const Info = ({item}:{item:Item}) => {
   return (
-    <div className="w-1/5 items-center justify-center flex flex-row bg-pink-500 ">
-      <div className="min-h-96 flex flex-col justify-around items-center">
-        <div>Clay Body:</div>
-        <div>Glazes:</div>
-        <div>wheel-thrown</div>
-        <div>2023</div>
+    <div className="w-1/5 mt-custom items-start flex flex-col h-3/5 text-2l">
+      <div className='h-2/5 flex flex-col justify-between'>
+        <div>Clay Body: {item.material}</div>
+        <div>Glazes: {item.glaze}</div>
+        <div>{item.method}</div>
+      </div>
+      <div className='h-1/5 flex flex-col justify-start mt-16'>
+        <div>{item.year}</div>
       </div>
     </div>
   );
