@@ -27,8 +27,8 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
             <Image
               className={`${
                 focused == 0
-                  ? "filter grayscale brightness-50 mb-5"
-                  : "mb-5 hover:grayscale brightness-25 cursor-pointer"
+                  ? "filter grayscale brightness-75 mb-5"
+                  : "mb-5 hover:brightness-75 cursor-pointer"
               }`}
               src={`/gallery/${itemid}.jpg`}
               width={150}
@@ -50,8 +50,8 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
             <Image
               className={`${
                 focused == 1
-                  ? "filter grayscale brightness-50 mb-5 mr-5"
-                  : "mb-5 mr-5 hover:grayscale brightness-25 cursor-pointer"
+                  ? "filter grayscale brightness-75 mb-5 mr-5"
+                  : "mb-5 mr-5 hover:brightness-75 cursor-pointer"
               }`}
               src={`/gallery/${thumb1}.jpg`}
               width={150}
@@ -64,8 +64,8 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
             <Image
               className={`${
                 focused == 2
-                  ? "filter grayscale brightness-50 mb-5 mr-5"
-                  : "mb-5 mr-5 hover:grayscale brightness-25 cursor-pointer"
+                  ? "filter grayscale brightness-75 mb-5 mr-5"
+                  : "mb-5 mr-5 hover:brightness-75 cursor-pointer"
               }`}
               src={`/gallery/${thumb2}.jpg`}
               width={150}
@@ -78,8 +78,8 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
             <Image
               className={`${
                 focused == 3
-                  ? "filter grayscale brightness-50 mb-5 mr-5"
-                  : "mb-5 mr-5 hover:grayscale brightness-25 cursor-pointer"
+                  ? "filter grayscale brightness-75 mb-5 mr-5"
+                  : "mb-5 mr-5 hover:brightness-75 cursor-pointer"
               }`}
               src={`/gallery/${thumb3}.jpg`}
               width={150}
@@ -97,14 +97,12 @@ const Thumb = ({itemid,numThumbs}:ThumbProps) => {
             alt={"primary image"}
           ></Image>
           <div className="text-2l flex flex-row justify-between mt-10">
-            {itemid !== "1" ? (
-              <Link
-                href={`/gallery/${String(Number(itemid) - 1)}`}
-                className="hover:text-gray-400"
-              >
-                previous item
-              </Link>
-            ) : null}
+            <Link
+              href={`/gallery/${String(Number(itemid) - 1)}`}
+              className={itemid !== "1" ? "hover:text-gray-400" : "invisible"}
+            >
+              previous item
+            </Link>
             {itemid !== "36" ? (
               <Link
                 href={`/gallery/${String(Number(itemid) + 1)}`}

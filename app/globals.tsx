@@ -64,7 +64,7 @@ export const allItems: Item[] = [
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
-    year: "2023",
+    year: "2022",
   },
   {
     id: 8,
@@ -72,13 +72,13 @@ export const allItems: Item[] = [
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
-    year: "2023",
+    year: "2021",
   },
   {
     id: 9,
     numThumbs: 4,
-    material: "white clay",
-    glaze: "white",
+    material: "sculpture clay",
+    glaze: "rust",
     method: "hand-thrown",
     year: "2023",
   },
@@ -172,7 +172,7 @@ export const allItems: Item[] = [
   },
   {
     id: 21,
-    numThumbs: 1,
+    numThumbs: 2,
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
@@ -212,7 +212,7 @@ export const allItems: Item[] = [
   },
   {
     id: 26,
-    numThumbs: 1,
+    numThumbs: 2,
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
@@ -236,7 +236,7 @@ export const allItems: Item[] = [
   },
   {
     id: 29,
-    numThumbs: 1,
+    numThumbs: 2,
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
@@ -252,7 +252,7 @@ export const allItems: Item[] = [
   },
   {
     id: 31,
-    numThumbs: 1,
+    numThumbs: 3,
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
@@ -260,7 +260,7 @@ export const allItems: Item[] = [
   },
   {
     id: 32,
-    numThumbs: 1,
+    numThumbs: 2,
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
@@ -268,7 +268,7 @@ export const allItems: Item[] = [
   },
   {
     id: 33,
-    numThumbs: 1,
+    numThumbs: 2,
     material: "white clay",
     glaze: "white",
     method: "hand-thrown",
