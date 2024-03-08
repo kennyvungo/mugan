@@ -10,12 +10,12 @@ const Events = () => {
         </div>
         <div className="flex flex-col justify-center items-center">
           PREVIOUS EVENTS
+          <div className="italic text-base mt-2">ART AND FOOD FESTIVAL — 12/02/2023</div>
+        <div className='italic text-base mb-4'>STONESTOWN GALLERIA, SAN FRANCISCO</div>
           <div className="italic text-base mt-2">QUEER ART FAIRE — 11/12/2023</div>
           <div className='italic text-base mb-4'>
             LAKESIDE LANDING, SAN FRANCISCO
           </div>
-          <div className="italic text-base">ART AND FOOD FESTIVAL — 12/02/2023</div>
-        <div className='italic text-base'>STONESTOWN GALLERIA, SAN FRANCISCO</div>
         </div>
       </div>
     </div>
