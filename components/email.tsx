@@ -71,7 +71,7 @@ const [showForm,setshowForm] = useState(true)
                 <div className='mb-4'>
                 THANK YOU! 
                 </div>
-                We will reach out as soon as we can
+                we will reach out as soon as we can
             </div>
             <Link href="/" className='hover:text-gray-500'>BACK TO HOME</Link>
         </div>
