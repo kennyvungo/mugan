@@ -30,7 +30,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
               <Image
                 className={`${
                   focused == 0
-                    ? "filter grayscale brightness-75 mb-5"
+                    ? "filter grayscale brightness-75 mb-5 border-black border"
                     : "mb-5 hover:brightness-75 cursor-pointer"
                 }`}
                 src={`https://dnm89pmv3oqa8.cloudfront.net/${itemid}.jpg`}
@@ -53,7 +53,7 @@ const Thumb = ({itemid,numThumbs,item}:ThumbProps) => {
               <Image
                 className={`${
                   focused == 1
-                    ? "filter grayscale brightness-75 mb-5"
+                    ? "filter grayscale brightness-75 mb-5 border-black border"
                     : "mb-5 hover:brightness-75 cursor-pointer"
                 }`}
                 src={`https://dnm89pmv3oqa8.cloudfront.net/${thumb1}.jpg`}

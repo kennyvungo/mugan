@@ -6,7 +6,7 @@ export default function Home() {
   
   return (
     <>
-    <main className="overflow-y-auto h-screen w-screen flex mt-custom flex-col items-center">
+    <main className="overflow-y-auto h-screen w-screen flex mt-12 flex-col items-center">
       <div className= "w-3/5 container-md sm:w-4/5 pb-24 sm:pb-12">
         {panels.map((num)=> <Card key={num} imageNum={num} /> )}
       </div>

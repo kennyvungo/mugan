@@ -27,6 +27,9 @@ function Modal() {
             <Link href={"/"} className="">
               HOME
             </Link>
+            <Link href={"/events"} className="">
+              EVENTS
+            </Link>
             <Link href={"/gallery"} className="">
               GALLERY
             </Link>
