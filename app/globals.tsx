@@ -85,7 +85,7 @@ export const allItems: Item[] = [
     material: "porcelain",
     glaze: "satin matte white/black mix",
     method: "wheel-thrown",
-    year: "2021",
+    year: "2023",
   },
   {
     id: 9,
@@ -229,7 +229,7 @@ export const allItems: Item[] = [
     material: "porcelain",
     glaze: "satin matte white, seaweed",
     method: "wheel-thrown",
-    year: "2023",
+    year: "2024",
   },
   {
     id: 27,
@@ -237,7 +237,7 @@ export const allItems: Item[] = [
     material: "porcelain",
     glaze: "unknown",
     method: "wheel-thrown",
-    year: "2023",
+    year: "2024",
   },
   {
     id: 28,
