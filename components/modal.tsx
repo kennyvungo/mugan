@@ -22,7 +22,7 @@ function Modal() {
   return (
     <>
       {modal && (
-          <div className="fixed top-0 w-full min-h-full bg-black bg-opacity-50 z-50 backdrop-blur flex justify-center items-center overscroll-hidden font-sans text-2xl">
+        <div className="fixed top-0 w-full min-h-full bg-black bg-opacity-50 z-50 backdrop-blur flex justify-center items-center overscroll-hidden font-sans text-2xl">
           <div className="flex flex-col items-center justify-around min-h-96 text-white">
             <Link href={"/"} className="">
               HOME
@@ -30,12 +30,14 @@ function Modal() {
             <Link href={"/gallery"} className="">
               GALLERY
             </Link>
-            <Link
-              href="https://www.instagram.com/by_unumcornu" className="">
+            <Link href={"/contact"} className="">
+              CONTACT
+            </Link>
+            <Link href="https://www.instagram.com/by_unumcornu" className="">
               INSTAGRAM
             </Link>
             <Link href={pathname} className="">
-                <IoMdClose/>
+              <IoMdClose />
             </Link>
           </div>
         </div>

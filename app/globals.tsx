@@ -16,7 +16,6 @@ export function sendEmail(data: FormData){
    })
      .then((res) => res.json())
      .then((response) => {
-       alert(response.message);
      })
      .catch((err) => {
        alert(err);
