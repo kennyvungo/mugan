@@ -89,7 +89,7 @@ export const allItems: Item[] = [
   },
   {
     id: 9,
-    numThumbs: 4,
+    numThumbs: 3,
     material: "porcelain",
     glaze: "shino acai matte, iron lustre, toasted sage",
     method: "wheel-thrown",

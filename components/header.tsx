@@ -58,12 +58,12 @@ export default function Header() {
           <VscKebabVertical style={{ fill: "black" }} className="md:hidden" />
         </Link>
       </div>
-      <div className="w-1/5 flex flex-row justify-center ">
+      <div className="w-1/5 flex flex-row justify-center sm:w-3/5 ">
         <Link href="/">
           <Image src={logo} alt="logo" width="64" height="64" />
         </Link>
       </div>
-      <div className="flex flex-row w-2/5">
+      <div className="flex flex-row w-2/5 sm:w-1/5">
         <span className="w-2/4 sm:w-1/6"> </span>
         <Link
           href="https://www.instagram.com/by_unumcornu/"
